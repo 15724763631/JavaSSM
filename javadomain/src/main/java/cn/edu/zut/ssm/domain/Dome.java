@@ -1,30 +1,30 @@
 package cn.edu.zut.ssm.domain;
 
 public class Dome {
-    private String userName;
-    private String password;
+    private String tUserName;
+    private String tPassword;
 
-    public String getUserName() {
-        return userName;
+    public String gettUserName() {
+        return tUserName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void settUserName(String tUserName) {
+        this.tUserName = tUserName;
     }
 
-    public String getPassword() {
-        return password;
+    public String gettPassword() {
+        return tPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void settPassword(String tPassword) {
+        this.tPassword = tPassword;
     }
 
     @Override
     public String toString() {
-        return "dome{" +
-                "userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
+        return "Dome{" +
+                "tUserName='" + tUserName + '\'' +
+                ", tPassword='" + tPassword + '\'' +
                 '}';
     }
 }

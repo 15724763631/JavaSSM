@@ -12,11 +12,6 @@
     <artifactId>javadao</artifactId>
     <packaging>jar</packaging>
     <dependencies>
-        <!-- mybatis包 -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-        </dependency>
         <dependency>
             <groupId>cn.edu.zut.ssm</groupId>
             <artifactId>javadomain</artifactId>

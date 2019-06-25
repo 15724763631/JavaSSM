@@ -16,20 +16,20 @@
 		<property name="maxActive" value="100"></property>
 	</bean>
 
-	<bean id="topicDataSource" parent="baseDataSource">
+	<bean id="DataSource" parent="baseDataSource">
 		<property name="url" value="${db.cms.topic.url}" />
 		<property name="username" value="${db.cms.topic.username}" />
 		<property name="password" value="${db.cms.topic.password}" />
 	</bean>
 
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="topicDataSource" />
+		<property name="dataSource" ref="DataSource" />
 	</bean>
 
 	<tx:annotation-driven transaction-manager="transactionManager"	proxy-target-class="true" />
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="topicDataSource" />
+		<property name="dataSource" ref="DataSource" />
 		<property name="configLocation" value="classpath:sqlmap-config.xml" />
 		<property name="mapperLocations" value="classpath:sqlmap/*.xml" />
 		<!--<property name="plugins">-->
