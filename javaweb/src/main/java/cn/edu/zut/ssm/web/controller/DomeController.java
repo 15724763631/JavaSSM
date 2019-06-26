@@ -38,8 +38,8 @@ public class DomeController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("1");
-        logger.info("2");
+        System.out.println("控制台输出");
+        logger.info("打印日志");
         return  list;
     }
 }
