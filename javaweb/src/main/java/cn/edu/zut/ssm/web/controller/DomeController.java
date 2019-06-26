@@ -1,6 +1,7 @@
 package cn.edu.zut.ssm.web.controller;
 
 import cn.edu.zut.ssm.service.DomeService;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +14,9 @@ import java.util.List;
 
 @Controller
 @RequestMapping("test")
+//@Slf4j
 public class DomeController {
-
-    private static final Logger logger = LoggerFactory.getLogger(DomeController.class);
+    private static final Logger log = LoggerFactory.getLogger(DomeController.class);
 
     @Autowired
     private DomeService domeService;
@@ -39,7 +40,7 @@ public class DomeController {
             e.printStackTrace();
         }
         System.out.println("控制台输出");
-        logger.info("打印日志");
+        log.info("打印日志");
         return  list;
     }
 }
